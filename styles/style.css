@@ -118,7 +118,7 @@ nav ul li a {
 
 
 .screen {
-    animation: flash 5s ease-out infinite;
+    animation: flash 3.5s ease-out infinite;
 }
 
 @keyframes flash {
@@ -271,6 +271,7 @@ svg {
 }
 
 /* work */
+
 /* 
 .work {
     margin-top: px;
@@ -303,7 +304,7 @@ svg {
   flex-direction: column;
   justify-content: flex-end;
   color: #eeeeee;
-  background-color: #1D2528;
+  background-color: #aa783e;
   border-bottom: 1px solid #10171a;
 }
 .box h2 {
@@ -317,12 +318,15 @@ footer {
   text-align: center;
   font-size: 16px;
   margin: 15px 0;
+  color: #00EA92;
+
 }
 
 
 
 .socialmedia {
   margin: 0 5px;
-  color:  #263e3d;;
   font-size: 1.2em;
+  color: #00EA92;
+
 }

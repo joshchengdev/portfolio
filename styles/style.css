@@ -62,7 +62,6 @@ body{
 header {
     width: 90%;
     margin: 0 auto;
-    
 }
 
 .logo {
@@ -108,43 +107,43 @@ nav ul li a {
 /* headline */
 .lefttriangle {
     position: absolute;
-    opacity: 1;
-    width: 1000px;
+    opacity: 0.9;
+    min-width: 100%;
     height: 700px;
     background-color: #233644;
-    clip-path: polygon(60% 0, 0 0, 0 54%);
-    animation: fullleft 3s ease-in 1;
-    
-}
-
-.righttriangle {
-    position: absolute;
-    opacity: 1;
-    width: 1000px;
-    height: 700px;
-    background-color: #233644;
-    clip-path: polygon(100% 41%, 100% 100%, 41% 100%);
-    animation: fullright 3s ease-in 1;
-
+    clip-path: polygon(0 60%, 85% 0, 0 0);
 }
 
 
-@keyframes fullleft {
-    0% {clip-path: polygon(100% 0, 0 0, 0 100%);}
-    100% {clip-path: polygon(60% 0, 0 0, 0 54%);}
-}
 
 
-@keyframes fullright {
-    0% {clip-path: polygon(100% 0, 100% 100%, 0 100%);}
-    100% {clip-path: polygon(100% 41%, 100% 100%, 41% 100%);}
-    
+.screen {
+    animation: flash 5s ease-out infinite;
 }
+
+@keyframes flash {
+    0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {
+        opacity:.99; 
+      }
+      20%,21.999%,63%,63.999%,65%,69.999% {
+        opacity:0.4; 
+      }
+}
+
+.illustration {
+    /* margin-top: 100px; */
+}
+svg {
+    width: 100%;
+    z-index: 888;
+}
+
 
 .headline {
     display: flex;
     flex-direction: row;
-    justify-content: center;    
+    justify-content: center; 
+    flex-wrap: wrap;   
     min-height: 80vh;
 }
 
@@ -155,7 +154,7 @@ nav ul li a {
     justify-content: center;
     color: #00EA92;
     font-family: 'Raleway', sans-serif;
-    letter-spacing: 5 px;
+    margin-top: 19%;
 }
 
 .animation-header div {
@@ -164,6 +163,9 @@ nav ul li a {
 
 
 .subhead {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     font-size: 2.5em;
     position: relative;
     bottom: 30px;

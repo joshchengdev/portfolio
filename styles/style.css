@@ -288,6 +288,9 @@ svg {
     flex-direction: column;
   }
 
+.individual-work a {
+    text-decoration: none;
+}
 .single {
     width: 100%;
     height: 250px;
@@ -327,4 +330,92 @@ footer {
   font-size: 1.2em;
   color: #00EA92;
 
+}
+
+
+.individual-work-page {
+    /* text-align: center; */
+    color: #a7a7a7;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.6;
+}
+
+.individual-work-page p {
+    color: #a7a7a7;
+}
+
+.intro-work {
+    padding: 3%;
+    padding-top: 5%;
+    background-color:  #1D2528;
+}
+
+.intro-work a {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+}
+
+.viewbox {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #00a164;
+    color:#eeeeee;
+    margin: 5% 0;
+    transition: all  0.5s;
+}
+
+.viewbox:hover {
+    background-color: #16533d;
+    box-shadow: 5px 10px #424344;
+}
+
+.viewbox:active {
+    background-color: #0e3627;
+}
+
+.individual-work-page h1 {
+    text-align: left;
+    position: relative;
+    top: 20px;
+    color: #eeeeee;
+    font-size: 2.4em;
+    font-family: 'Lora', serif;
+}
+
+.individual-work-page h2 {
+    font-size: 1.7em;
+    color: #eeeeee;
+    margin: 15px 0 0;
+}
+
+
+.individual-work-page img {
+    display: block;
+    width: 50%;
+    margin: 1% auto;
+    padding: 15px;
+}
+.toolsAndSkills {
+    margin: 0 2%;
+}
+
+.toolsAndSkills ul  {
+    display: inline-block;
+}
+
+.toolsAndSkills ul li {
+    background-color: #1D2528;
+    padding: 5px 2px;
+    font-size: 0.7em;
+    margin: 3px 5px;
+    float: left;
+}
+
+.process {
+    margin: 0 2%;
+}
+
+.improvelist {
+    margin: 0 2%;
 }

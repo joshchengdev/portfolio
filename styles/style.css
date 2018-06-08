@@ -333,23 +333,25 @@ footer {
 }
 
 
+
+/* individual work page */
+
 .individual-work-page {
-    /* text-align: center; */
     color: #a7a7a7;
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.6;
+    margin: 0 2%;
+
 }
 
-.individual-work-page p {
-    color: #a7a7a7;
+.work-page-title{
+    width: 130px;
+    height: 5px;
+    background-color: #00EA92;
+    color: #00EA92;
+    margin: 0;
+    margin-bottom: 15px;
 }
-
-.intro-work {
-    padding: 3%;
-    padding-top: 5%;
-    background-color:  #1D2528;
-}
-
 .intro-work a {
     display: flex;
     text-decoration: none;
@@ -358,7 +360,7 @@ footer {
 
 .viewbox {
     display: inline-block;
-    padding: 10px 15px;
+    padding: 10px 30px;
     background-color: #00a164;
     color:#eeeeee;
     margin: 5% 0;
@@ -376,11 +378,10 @@ footer {
 
 .individual-work-page h1 {
     text-align: left;
-    position: relative;
-    top: 20px;
     color: #eeeeee;
-    font-size: 2.4em;
+    font-size: 4em;
     font-family: 'Lora', serif;
+    line-height: 1.3;
 }
 
 .individual-work-page h2 {
@@ -389,16 +390,18 @@ footer {
     margin: 15px 0 0;
 }
 
-
 .individual-work-page img {
+    max-width: 100%;
+}
+
+#trinity {
     display: block;
-    width: 50%;
+    max-width: 70%;
     margin: 1% auto;
-    padding: 15px;
 }
-.toolsAndSkills {
-    margin: 0 2%;
-}
+
+
+
 
 .toolsAndSkills ul  {
     display: inline-block;
@@ -412,10 +415,71 @@ footer {
     float: left;
 }
 
-.process {
-    margin: 0 2%;
-}
+
 
 .improvelist {
     margin: 0 2%;
+    list-style-type: square;
+}
+
+.colorpalette {
+    display: flex;   
+    justify-content: center;
+    margin: 2% 0;
+}
+.colorbox {
+    width: 75px;
+    height: 75px;    
+    margin: 0 3px;
+}
+
+.colorbox:first-of-type {
+    background-color: #66C4DD;
+}
+
+.colorbox:nth-of-type(2){
+    background-color: #21869E;
+}
+.colorbox:nth-of-type(3){
+    background-color: #263E3D;
+}
+.colorbox:nth-of-type(4){
+    background-color: #5B5B5B;
+}
+
+
+@media only screen and (min-width:700px){
+    .
+
+    .individual-work-page {
+        margin: 0 10%;
+    }
+    .viewbox {
+        display: table;
+        margin: 5% auto;
+    }
+    #trinity {
+        width: 300px;
+    }
+    .individual-work-page img {
+        width: 300px;
+        align-self: center;
+        flex: 1;
+    }
+    .individual-work-page img:first-of-type {
+        margin-right: 1.5%;
+    }
+    .multiple-images {
+        display: flex;
+        margin: 2% 0;
+    }
+    .colorpalette {
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (min-width:1200px){
+    .individual-work-page {
+        margin: 0 13%;
+    }
 }

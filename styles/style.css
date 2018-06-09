@@ -109,7 +109,7 @@ nav ul li a {
     position: absolute;
     opacity: 0.9;
     min-width: 100%;
-    height: 700px;
+    height: 800px;
     background-color: #233644;
     clip-path: polygon(0 60%, 85% 0, 0 0);
 }
@@ -152,7 +152,7 @@ svg {
     justify-content: center;
     color: #00EA92;
     font-family: 'Raleway', sans-serif;
-    margin-top: 19%;
+    margin-top: 15%;
 }
 
 .animation-header div {
@@ -359,6 +359,7 @@ footer {
 }
 
 .viewbox {
+    cursor: pointer;
     display: inline-block;
     padding: 10px 30px;
     background-color: #00a164;
@@ -449,7 +450,6 @@ footer {
 
 
 @media only screen and (min-width:700px){
-    .
 
     .individual-work-page {
         margin: 0 10%;
@@ -476,8 +476,19 @@ footer {
     .colorpalette {
         justify-content: flex-start;
     }
+   
 }
-
+@media only screen and (min-width: 1000px){
+    .lefttriangle {
+        height: 1000px;
+    }
+    .animation-header {
+        margin-top: 0;
+    }
+    .illustration {
+        margin-top: 10%;
+    }
+}
 @media only screen and (min-width:1200px){
     .individual-work-page {
         margin: 0 13%;

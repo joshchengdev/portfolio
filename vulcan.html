@@ -27,9 +27,9 @@
       
 
     <section class="individual-work-page">
-        <h1>TWD Landing Page</h1>
+        <h1>Vulcan</h1>
         <div class="intro-work">
-            <p>This landing page was created to showcase all of the projects that I’ve completed in the Technical Web Design program at BCIT. The design is inspired by the vertical split screen design trend that I’ve been seeing a lot. This was completed near the beginning of the program where I just finished learning HTML and CSS as well as some basic JavaScript.</p>
+            <p>Vulcan was the first web group project that I’ve ever done, which required the use of Git. The purpose of this site was to practice my HTML and CSS skills. I was given a mockup of what the website should look like and was asked to build it from scratch. This was also the first time I’ve used SASS on a big project.</p>
           <span class="viewbox">  <a href="http://jcheng.bcitwebdeveloper.ca/" target="blank">View Live Site</a></span>
 
         </div>
@@ -40,28 +40,47 @@
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li>
-                    <li>Javascript/jQuery</li>
-                    <li>Adobe Illustrator</li>
-                    <li>Web Design</li>
-                    <li>UX/UI</li>          
+                    <li>SASS</li>
+                    <li>Communication</li>
+                    <li>Teamwork</li>          
                 </ul>
         </div>
         <div class="process">
             <h2>The Process</h2>
-            <p>I was looking around awwwards for inspiration and noticed a trend of vertical split screens. I decided that this would fit well with what I had in mind for the main homepage, which was to have a short headline with some svg’s beside it.</p>
-            <p>Since the purpose of this site was mainly to display a list of projects, I wanted to include some images that were relevant. I decided to add the badges of the holy trinity of front-end web development:</p>
+            <p>As I was styling through the website, I realized how useful and convenient SASS was. Using variables for specific sizes, colors, and media queries were extremely helpful and time efficient since a lot of the styles on the website followed a similar pattern.</p>
     
-            <img src="./images/trinity.svg" alt="Holy Trinity of Front-end development" >
-        
+            <pre>
+                <code>
+$head-font: 'Roboto Condensed', sans-serif;
+$body-font: 'Roboto', sans-serif;
+$button-color: #429bd6;
+$dark-blue: #154a66;
+$green: #367d22;
+$gray: #616161;
+$selection: #bbbbbb;
+$news: #bedcef;
+$dark-gray:#504f4f;
+$light-gray: #c5c5c5;
+$light-blue: #009ddc;
+
+// Media Query Breakpoints
+$desktop-wide: 1200px;
+$desktop-narrow: 1140px;
+$tablet-landscape: 1024px;
+$tablet-portrait: 768px;
+$phone-landscape: 560px;
+$phone-portrait: 480px;
+                </code>
+              </pre>        
         </div>
         <div class="improvments">
             <h2>What Can Be Improved:</h2>
             <ul class="improvelist">
-                <li>Smoother CSS Animations</li>
-                <li>SVG resizing </li>
-                <li>Margin in between each project</li>
-                <li>Hovering over projects creates unwanted stretching</li>
-                <li>Starting mobile first rather than desktop</li>
+                <li>Use variables in the media query</li>
+                <li>Use mixins to create quick styles</li>
+                <li>Use placeholder selectors for outputting DRY CSS</li>
+                <li>Improve form style at mid-screen sizes</li>
+                <li>Start mobile first rather than desktop</li>
             </ul>
         </div>
 

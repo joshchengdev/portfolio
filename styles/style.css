@@ -316,9 +316,16 @@ svg {
     font-size: 2.3em;
     bottom: 10px;
     z-index: 100;
+    margin-left: 10px;
 }
 
-
+pre code {
+    font-family: monospace;
+    background-color: #111e36;
+    border: 1px solid #999999;
+    display: block;
+    padding: 20px;
+  }
 
 
 
@@ -329,6 +336,8 @@ footer {
   text-align: center;
   font-size: 16px;
   margin: 15px 0;
+  margin-top: 50px;
+
   color: #00EA92;
 
 }
@@ -458,18 +467,26 @@ footer {
     background-color: #5B5B5B;
 }
 
+@media only screen and (min-width: 500px) {
+
+    pre {
+        width: 500px;
+        margin: 0 auto;
+    }
+}
+
 
 @media only screen and (min-width:700px){
 
     /* index */
 
-    .work,
+    .work h1,
     .about-me {
-        margin: 0 20%;
+        margin: 0 10%;
     }
 
     .work-container {
-        max-width: 500px;
+        width: 100%;
     }
 
     .work-container:not(:first-of-type),
@@ -477,14 +494,10 @@ footer {
         margin-top: 12px;
     }
 
-
-    .work-port {
-        width: 100%;
-    }
-
     .worklist {
         flex-direction: row;
         flex-wrap: wrap;  
+        justify-content: center;
       }
 
 
@@ -514,18 +527,40 @@ footer {
     .colorpalette {
         justify-content: flex-start;
     }
-   
+
 }
+   
+
+
 @media only screen and (min-width: 1000px){
     .lefttriangle {
         height: 1000px;
     }
     .animation-header {
-        margin-top: 0;
+        margin-top: 10%;
     }
     .illustration {
         margin-top: 10%;
     }
+
+    .work h1 {
+        margin: 0;
+    }
+
+    .work {
+        margin: 0 13%;
+    }
+    .work-container {
+        width: 500px;
+    }
+}
+
+@media only screen and (min-width: 1063px) {
+
+    .animation-header {
+        margin-top: 0;
+    }
+
 }
 @media only screen and (min-width:1200px){
     .individual-work-page {

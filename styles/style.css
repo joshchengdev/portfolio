@@ -312,11 +312,13 @@ svg {
     height: auto;
     margin-bottom: -50px;
     overflow: hidden;
-    transition: all 0.3s;
+    filter: opacity(50%);
+
+    transition: all 0.4s;
 }
 
 .work-container img:hover {
-    transform: scale(1.1);
+    filter: none;
 }
 
 .work-container a {
@@ -435,7 +437,9 @@ footer {
     margin: 0 auto;
 }
 
-
+.landing-images{
+    margin: 10px 0;
+}
 
 .toolsAndSkills ul  {
     display: inline-block;
@@ -563,11 +567,10 @@ pre code {
 
     .multiple-images {
         display: flex;
+        justify-content: space-evenly;
         margin: 2% 0;
     }
-    .colorpalette {
-        justify-content: flex-start;
-    }
+
 
 }
    

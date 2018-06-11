@@ -431,6 +431,12 @@ footer {
     max-width: 100%;
 }
 
+.port-wireframe {
+    max-width: 60%;
+    display: block;
+    margin: 10px auto;
+}
+
 #trinity {
     display: block;
     max-width: 70%;
@@ -493,6 +499,9 @@ pre code {
     background-color: #5B5B5B;
 }
 
+.cp_embed_wrapper {
+    margin: 30px 0;
+}
 
 
 @media only screen and (min-width: 500px) {
@@ -571,6 +580,11 @@ pre code {
         margin: 2% 0;
     }
 
+    .port-wireframe {
+        width: 100%;
+        margin: 2% auto;
+    }
+ 
 
 }
    

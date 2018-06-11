@@ -58,14 +58,17 @@ body{
 }
 
 
+
 /* Header */
-header {
-    width: 90%;
-    margin: 0 auto;
+.navbar {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
 }
 
 .logo {
     line-height: 80px;
+    margin: 0 20px;
 }
 
 .logo a{
@@ -84,7 +87,7 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-    /* margin: 0 10%; */
+    margin: 0 10%;
 }
 
 nav ul {
@@ -152,10 +155,13 @@ svg {
     justify-content: center;
     color: #00EA92;
     font-family: 'Raleway', sans-serif;
-    margin: 15% 3%;
+    margin: 35% 3%;
     margin-bottom: 0;
 }
 
+.active { 
+    background-color: #233644ec;
+}
 
 
 
@@ -214,6 +220,7 @@ svg {
     font-size: 0.5em;
     /* background-color: #dd9000; */
     padding: 10px 5px;
+    transition: all 0.3s;
 
 }
 
@@ -244,7 +251,6 @@ svg {
 
 .about-me {
     font-family: 'Source Sans Pro', sans-serif;
-    margin-top: 150px;
     line-height: 1.6; 
 }
 
@@ -260,18 +266,26 @@ svg {
 
 .about-content {
     padding: 5%;
-    background-color: #1D2528;
-    color: #eeeeee;
+    color: #bdbdbd;
+    border-top: 10px solid #233644ec;
+    border-bottom: 10px solid #233644ec;
 }
 .about-content h3 {
   font-weight: bold;
 }
+.about-content a {
+    color: #00a164;
+}
+
+.about-content a:hover {
+    color: #00a11b;
+}
+.highlight {
+    color: #00a164;
+}
+
 
 /* work */
-/* .worklist {
-    display: flex;
-    flex-direction: column;
-} */
 
 .worklist {
     display: flex;
@@ -319,30 +333,26 @@ svg {
     margin-left: 10px;
 }
 
-pre code {
-    font-family: monospace;
-    background-color: #111e36;
-    border: 1px solid #999999;
-    display: block;
-    padding: 20px;
-  }
-
 
 
 
 
 /* footer */
 footer {
-  text-align: center;
-  font-size: 16px;
-  margin: 15px 0;
-  margin-top: 50px;
-
-  color: #00EA92;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 150px;
+    color: #00EA92;
 
 }
 
+.footerhr {
+    width: 80%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 234, 146, 0.75), rgba(255, 255, 255, 0));
 
+}
 
 .socialmedia {
   margin: 0 5px;
@@ -360,6 +370,7 @@ footer {
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.6;
     margin: 0 2%;
+    padding-top: 25%;
 
 }
 
@@ -371,19 +382,23 @@ footer {
     margin: 0;
     margin-bottom: 15px;
 }
-.intro-work a {
-    display: flex;
+
+.viewbox2 {
+    display: none;
+}
+
+.viewbox a {
     text-decoration: none;
     color: inherit;
 }
 
 .viewbox {
     cursor: pointer;
-    display: inline-block;
+    display: table;
     padding: 10px 30px;
     background-color: #00a164;
     color:#eeeeee;
-    margin: 5% 0;
+    margin: 5% auto;
     transition: all  0.5s;
 }
 
@@ -435,6 +450,13 @@ footer {
     float: left;
 }
 
+pre code {
+    font-family: monospace;
+    background-color: #111e36;
+    border: 1px solid #999999;
+    display: block;
+    padding: 20px;
+  }
 
 
 .improvelist {
@@ -467,11 +489,17 @@ footer {
     background-color: #5B5B5B;
 }
 
+
+
 @media only screen and (min-width: 500px) {
 
     pre {
         width: 500px;
         margin: 0 auto;
+    }
+
+    .individual-work-page {
+        padding-top: 150px;
     }
 }
 
@@ -505,9 +533,19 @@ footer {
     .individual-work-page {
         margin: 0 10%;
     }
+
+    .intro-work {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .intro-work p {
+        width: 80%;
+        margin-right: 1%;
+    }
     .viewbox {
-        display: table;
-        margin: 5% auto;
+        display: inline-block;
+        margin: 10px auto;
     }
     #trinity {
         width: 300px;
@@ -551,7 +589,36 @@ footer {
         margin: 0 13%;
     }
     .work-container {
-        width: 500px;
+        max-width: 45%;
+    }
+
+    .viewbox {
+        display: none;
+    }
+    .viewbox2 a {
+        text-decoration: none;
+        color: inherit;
+    }
+    .toolsAndSkills {
+        display: inline;
+    }
+    .viewbox2 {
+        cursor: pointer;
+        display: inline-block;
+        padding: 10px 30px;
+        background-color: #00a164;
+        color:#eeeeee;
+        margin: 90px 0 30px;
+        transition: all  0.5s;
+    }
+    
+    .viewbox2:hover {
+        background-color: #16533d;
+        box-shadow: 5px 10px #424344;
+    }
+    
+    .viewbox2:active {
+        background-color: #0e3627;
     }
 }
 

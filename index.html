@@ -10,18 +10,17 @@
     <title>Josh Cheng's Portfolio</title>
 </head>
 <body>
-    <header>
+    <header class ="navbar">
 
         <nav>
                 <div class="logo">
                         <a href="index.html">jc</a>
                 </div>
                 <ul>
-                    <li><a href="">work</a></li>
+                    <li><a href="#works">work</a></li>
                     <li><a href="about.html">about</a></li>
                 </ul>
             </nav>        
-            </header>       
     </header>
       
 <section class ="headline">
@@ -39,7 +38,7 @@
 
         <div class ="subhead">
             <h1>I design and develop websites.</h1>
-            <a href="#about-me" class ="about-btn">Read About Me</a>
+            <a href="about.html" class ="about-btn">Read About Me</a>
         </div>
             
     </div>
@@ -167,7 +166,7 @@
 </section>
 
 
-<section class="work">
+<section class="work" id="works">
     <h1>work</h1>
 
 
@@ -219,19 +218,20 @@
 
 </section>
 
-
+    
 
 <footer>
-<p>&copy;Josh Cheng | <a href = "#" class ="socialmedia"><i class="fab fa-linkedin"></i></a><a href = "#" class ="socialmedia"><i class="fas fa-envelope-square"></i></a><a href = "#" class ="socialmedia"><i class="fab fa-github"></i></a>
-
-
-
-</p>
+    <hr class ="footerhr">
+    <br>
+    <p>&copy;Josh Cheng | <a href = "https://www.linkedin.com/in/josh-cheng-a66988159/" target="blank" class ="socialmedia"><i class="fab fa-linkedin"></i></a><a href = "https://github.com/joshchengdev" target="blank" class ="socialmedia"><i class="fab fa-github"></i></a><a href = "https://codepen.io/joshishere/" target="blank" class ="socialmedia"><i class="fab fa-codepen"></i></a>
+    </p>
 </footer>
 
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./scripts/smoothscroll.js"></script>
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 <script src="./scripts/reveal.js"></script>
+<script src="./scripts/header.js"></script>
 </body>
 </html>

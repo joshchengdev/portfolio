@@ -432,9 +432,8 @@ footer {
 #trinity {
     display: block;
     max-width: 70%;
-    margin: 1% auto;
+    margin: 0 auto;
 }
-
 
 
 
@@ -474,6 +473,7 @@ pre code {
     height: 75px;    
     margin: 0 3px;
 }
+
 
 .colorbox:first-of-type {
     background-color: #66C4DD;
@@ -547,17 +547,20 @@ pre code {
         display: inline-block;
         margin: 10px auto;
     }
+    .landing-images {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+        padding: 30px 0;
+    }
     #trinity {
         width: 300px;
     }
     .individual-work-page img {
-        width: 300px;
+        width: 400px;
         align-self: center;
-        flex: 1;
     }
-    .individual-work-page img:first-of-type {
-        margin-right: 1.5%;
-    }
+
     .multiple-images {
         display: flex;
         margin: 2% 0;
@@ -619,6 +622,10 @@ pre code {
     
     .viewbox2:active {
         background-color: #0e3627;
+    }
+
+    #trinity {
+        margin: 0 50px;
     }
 }
 

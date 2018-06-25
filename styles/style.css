@@ -147,6 +147,7 @@ svg {
     justify-content: center; 
     flex-wrap: wrap;   
     min-height: 80vh;
+    visibility: hidden;
 }
 
 .animation-header {
@@ -582,12 +583,11 @@ pre code {
         margin: 2% auto;
     }
     .work-container img {
-        filter: opacity(50%);
         transition: all 0.4s;
         
     }
     .work-container img:hover {
-        filter: none;
+        filter: blur(5px);
     }
  
 

@@ -78,7 +78,7 @@ body{
     font-family: 'IBM Plex Mono', monospace;
 
 }
-
+nav ul li a:hover,
 .logo a:hover {
     color: #00EA92;
 }
@@ -235,7 +235,7 @@ svg {
 }
 
 .about-btn:hover {
-    color: #aad1ec;
+    color: #00EA92;
 }
 
 
@@ -279,8 +279,12 @@ svg {
     color: #00a164;
 }
 
+.resume {
+    text-decoration: none;
+}
+
 .about-content a:hover {
-    color: #00a11b;
+    color: #eee;
 }
 .highlight {
     color: #00a164;
@@ -358,7 +362,11 @@ footer {
   margin: 0 5px;
   font-size: 1.2em;
   color: #00EA92;
+  text-decoration: none;
+}
 
+.socialmedia:hover {
+    color: #eee;
 }
 
 

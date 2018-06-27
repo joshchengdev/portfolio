@@ -574,6 +574,7 @@ pre code {
 
     .multiple-images {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-evenly;
         margin: 2% 0;
     }
